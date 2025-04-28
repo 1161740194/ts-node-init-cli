@@ -1,0 +1,23 @@
+{
+  "name": "my-ts-node-cli",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "bin": {
+    "my-ts-node-cli": "dist/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "nodemon --watch src/**/*.ts --exec ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "commander": "^13.1.0",
+    "download-git-repo": "^3.0.2",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2"
+  }
+}
